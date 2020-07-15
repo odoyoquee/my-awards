@@ -103,7 +103,7 @@ def newrating(request,id):
 
   else:
     form = RatingForm()
-  return render(request, 'rating.html',{'form':form,'profile':profile,'id':id})
+  return render(request, 'ratings.html',{'form':form,'profile':profile,'id':id})
 
 
 @login_required(login_url='/accounts/login/')

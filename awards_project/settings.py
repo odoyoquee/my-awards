@@ -32,8 +32,10 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 #login redirection
+LOGIN_REDIRECT_URL='welcome'
+LOGIN_URL='/accounts/login/'
 
-LOGIN_REDIRECT = '/'
+# LOGIN_REDIRECT = '/'
 
 
 # Application definition
@@ -161,3 +163,4 @@ REST_FRAMEWORK = {
 }
 
 django_heroku.settings(locals())
+
