@@ -70,7 +70,7 @@ If you have any question or contributions, please email me at [odoyograce23@gmai
 
 ## License 
 
-* [![License](https://img.shields.io/packagist/l/loopline-systems/closeio-api-wrapper.svg)https://github.com/odoyoquee/my-awards/blob/master/license.md  
+* [![License](https://img.shields.io/packagist/l/loopline-systems/closeio-api-wrapper.svg)](https://github.com/odoyoquee/my-awards/blob/master/license.md ) 
 * Copyright (c) 2020 **odoyo Grace**
 
 
