@@ -31,6 +31,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+UPLOADCARE={
+    'pub_key': 'demopublickey',
+    'secret': 'demoprivatekey'
+}
+
+
 #login redirection
 LOGIN_REDIRECT_URL='welcome'
 LOGIN_URL='/accounts/login/'
@@ -52,6 +58,7 @@ INSTALLED_APPS = [
     # 'tinymce',
     'rest_framework',
     'registration',
+    'pyuploadcare.dj'
 
 ]
 
