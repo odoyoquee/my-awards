@@ -66,7 +66,13 @@ Open the application on your browser `127.0.0.1:8000`.
 * There are no known bugs currently but pull requests are allowed incase you spot a bug 
 
 ## Contact Information   
-If you have any question or contributions, please email me at [odoyograce23@gmail.com]  
+If you have any question or contributions, please email me at [odoyograce23@gmail.com] 
+
+## License 
+
+* [![License](https://img.shields.io/packagist/l/loopline-systems/closeio-api-wrapper.svg)](https://github.com/odoyoquee/my-awards/blob/development/LICENSE)  
+* Copyright (c) 2020 **odoyo Grace**
+
 
   
 
