@@ -8,7 +8,7 @@ This project allows users to post their projects for other users to rate accordi
 
 ## Live Link
 
-## User Story  
+## User Stories  
   
 * A user can view posted projects and their details. 
 * A user can post a project to be rated/reviewed. 
