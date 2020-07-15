@@ -61,5 +61,8 @@ Open the application on your browser `127.0.0.1:8000`.
 * [Python3.7.3](https://www.python.org/)  
 * [Django 2.2.6](https://docs.djangoproject.com/en/2.2/) 
 * [Heroku](https://heroku.com)  
+
+  ## Known Bugs  
+* There are no known bugs currently but pull requests are allowed incase you spot a bug 
   
 
