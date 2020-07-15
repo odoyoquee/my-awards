@@ -34,7 +34,7 @@ class Profile(models.Model):
 
 class Project(models.Model):
   title = models.CharField(max_length=60)
-  image = models.ImageField(upload_to = 'photos/')
+  image = ImageField()
   description = models.TextField()
   link = models.CharField(max_length=100)
   poster = models.ForeignKey(User,on_delete=models.CASCADE)
