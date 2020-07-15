@@ -6,6 +6,10 @@
 
 This project allows users to post their projects for other users to rate according to design, usability and content.
 
+
+## Project Author
+- Odoyo Grace Awino
+
 ## Live Link
 
 ## User Stories  
