@@ -40,7 +40,7 @@ cd project-my-awards
 ##### Setup Database  
 SetUp your database User,Password, Host then make migrate  
  ```bash 
-python manage.py makemigrations instagram
+python manage.py makemigrations awards
  ``` 
   Now Migrate  
  ```bash 
