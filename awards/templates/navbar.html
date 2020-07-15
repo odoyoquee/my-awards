@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            transition: all
+        }
+        
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgba(135, 224, 240, 0.438);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 20px;
+            color: whitesmoke;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        #sidenav {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+        
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 20px;
+            }
+            .sidenav a {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="mySidenav" style="background-color:  rgba(135, 224, 240, 0.438): whitesmoke; font-family: 'Anton', cursive; font-size: 28px;" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="{%url 'welcome'%}">Home</a>
+            <a href="/accounts/login">Login</a>
+            <a href="/accounts/register">Register</a>
+            <a href="{% url 'newproject'%}">Add Project</a>
+
+            <a href="{% url 'newprofile' %}">Add a profile</a>
+            <a href="{% url 'myprojects' %}">Projects</a>
+            <a href="{% url 'contact' %}">Contact Us</a>
+        </div>
+
+        <div id="sidenav" style="background-color:  rgba(135, 224, 240, 0.438): whitesmoke;height: 47px;">
+            <span style="font-size:20pxpx; color:rgb(29, 80, 138); cursor:pointer" onclick="openNav()">&#9776; Home</span>
+            <div class="pull-right">
+                <a href="{% url 'profile' profile.id %}" class="btn-lg" style="color: rgb(33, 112, 177)">Profile</a>
+                <a href="{% url 'searchme' %}" class="btn-lg" style="color: rgb(64, 100, 184)">Search a project</a>
+            </div>
+        </div>
+
+    </nav>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = '20%';
+            document.getElementById("sidenav").style.marginLeft = "0";
+            document.body.style.backgroundColor = "rgba(0,0,0)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("sidenav").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+
+</body>
+
+</html>
